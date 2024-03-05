@@ -1,0 +1,243 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+Personal Portfolia Website
+{% endblock %}
+
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "port/index.css" %}" />
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript" src="{% static "port/index.js" %}"></script>
+<script type="text/javascript" src="{% static "port/type.js" %}"></script>
+{% endblock %}
+
+{% block content %}
+<nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#" id="Portfo">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="service">Services</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+              <i class="fa fa-bars"></i>
+          </div> 
+        </div>
+</nav>
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Nishant Singh</div>
+                <div class="text-3">And I'm a <span class="typing">Developer</span></div>
+                <a href="#">Hire me</a>
+            </div>
+        </div>
+    </section>
+
+ 
+     <!-- about section start-->
+
+     <section class="about" id="about">
+      <div class="max-width">
+          <h2 class="title">About Me</h2>
+          <div class="above-content">
+              <div class="column left">
+                  <img src="{% static "port/images/profile1.jpeg" %}" alt="images">
+              </div>
+              <div class="column right">
+                  <div class="text">I'am Nishant and I'am a <span class="hello">Developer</span></div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ea rem aspernatur reiciendis
+                      molestias blanditiis consequuntur necessitatibus, voluptatum in, nisi eligendi dolorum id
+                      voluptas at porro, soluta cupiditate similique! Alias, exercitationem natus! Excepturi explicabo
+                      rem corrupti vel beatae. Nostrum cum fugit asperiores in magnam impedit minima accusamus, nisi
+                      cupiditate tempore omnis, quis neque iusto perspiciatis? Iusto ipsum ea, ex aliquid nobis dolor
+                      rem repellendus accusamus, corporis eum, ut vitae accusantium quod animi atque quidem. Nesciunt
+                      voluptatum voluptate aliquid suscipit dolor!</p>
+                  <a href="#">Download CV</a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <!-- Service section start-->
+
+
+  <section class="service" id="service">
+      <div class="max-width">
+          <h2 class="title">My Services</h2>
+          <div class="serv-content">
+              <div class="card">
+                  <div class="box">
+                      <i class="fas fa-paint-brush"></i>
+                      <div class="text">Web Design</div>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima laborum ea, ducimus
+                          consectetur error voluptatem, iste quasi consequuntur ipsa id obcaecati rem architecto,
+                          corporis aliquam quae laudantium. Commodi cumque nostrum reiciendis quas aperiam
+                      </p>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <div class="box">
+                      <i class="fas fa-chart-line"></i>
+                      <div class="text">Advertising</div>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima laborum ea, ducimus
+                          consectetur error voluptatem, iste quasi consequuntur ipsa id obcaecati rem architecto,
+                          corporis aliquam quae laudantium. Commodi cumque nostrum reiciendis quas aperiam
+                      </p>
+                  </div>
+              </div>
+
+              <div class="card">
+                  <div class="box">
+                      <i class="fa-solid fa-code"></i>
+                      <div class="text">Backend Design</div>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima laborum ea, ducimus
+                          consectetur error voluptatem, iste quasi consequuntur ipsa id obcaecati rem architecto,
+                          corporis aliquam quae laudantium. Commodi cumque nostrum reiciendis quas aperiam
+                      </p>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+  <!--skills section start-->
+  <section class="skills" id="skills">
+      <div class="max-width">
+          <h2 class="title">My skills</h2>
+          <div class="skills-content">
+              <div class="column left">
+                  <div class="text">My creative skills & experience</div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis alias omnis atque officiis
+                      cumque molestiae natus dolorem non sed iste, unde at? Voluptatem consectetur dolor ipsa dolorem
+                      dicta, quae ut veniam provident cum ipsum nihil illum maiores, commodi tempora, illo iusto quos?
+                  </p>
+                  <a href="#">Read more</a>
+              </div>
+              <div class="column right">
+                  <div class="bars">
+                      <div class="info">
+                          <span>HTML</span>
+
+                      </div>
+                      <div class="line html"></div>
+                  </div>
+                  <div class="bars">
+                      <div class="info">
+                          <span>CSS</span>
+
+                      </div>
+                      <div class="line css"></div>
+                  </div>
+                  <div class="bars">
+                      <div class="info">
+                          <span>JavaScript</span>
+
+                      </div>
+                      <div class="line JavaScript"></div>
+                  </div>
+                  <div class="bars">
+                      <div class="info">
+                          <span>Django</span>
+
+                      </div>
+                      <div class="line Django"></div>
+                  </div>
+                  <div class="bars">
+                      <div class="info">
+                          <span>MySQL</span>
+
+                      </div>
+                      <div class="line MySQL"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!--Contact section start-->
+
+  <section class="contact" id="contact">
+      <div class="max-width">
+          <h2 class="title">Contact me</h2>
+          <div class="contact-content">
+              <div class="column left">
+                  <div class="text">Get in Touch</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem architecto natus facere excepturi
+                      nisi repudiandae sequi ab. Fugit, laudantium blanditiis.</p>
+                  <div class="icons">
+                      <div class="row">
+                          <i class="fas fa-user"></i>
+                          <div class="info">
+                              <div class="head">Name</div>
+                              <div class="sub-title">Nishant Singh</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div class="info">
+                              <div class="head">Address</div>
+                              <div class="sub-title">Bhubaneshwar , Odisha</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <i class="fas fa-envelope"></i>
+                          <div class="info">
+                              <div class="head">Email</div>
+                              <div class="sub-title">nishantsingh2072003@gmail.com</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="column right">
+                  <div class="text">Message Me</div>
+                  <form action="#">
+                      <div class="fields">
+                          <div class="field name">
+                              <input type="text" placeholder="Name" required>
+                          </div>
+                          <div class="field email">
+                              <input type="email" placeholder="Email" required>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <input type="text" placeholder="Subject" required>
+                      </div>
+                      <div class="field textarea">
+                          <textarea cols="30" rows="10" placeholder="Describe Project .." required></textarea>
+                      </div>
+                      <div class="button">
+                          <button type="submit">Send Message</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+
+  <!-- footer section start-->
+  <footer>
+      <span>Created By <a href="#">Nishant</a> | <span class="far fa-copyright"></span> All rights reserved</span>
+  </footer>
+
+
+
+</body>
+
+</html>
+{% endblock %}

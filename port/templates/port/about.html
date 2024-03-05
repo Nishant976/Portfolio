@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "port/about.css" %}" />
+{% endblock %}
+
+
+{% block script %}
+<script type="text/javascript" src="{% static "port/index.js" %}"></script>
+<script type="text/javascript" src="{% static "port/type.js" %}"></script>
+{% endblock %}
+
+
+{% block content %}
+   <body>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+                <ul class="menu">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="service">Services</a></li>
+                    <li><a href="skill">Skills</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                  <i class="fa fa-bars"></i>
+              </div> 
+            </div>
+        </nav>
+
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">About Me</h2>
+                <div class="above-content">
+                    <div class="column left">
+                        <img src="{% static "port/images/profile1.jpeg" %}" alt="images">
+                    </div>
+                    <div class="column right">
+                        <div class="text">I'am Nishant and I'am a <span class="hello">Developer</span></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ea rem aspernatur reiciendis
+                            molestias blanditiis consequuntur necessitatibus, voluptatum in, nisi eligendi dolorum id
+                            voluptas at porro, soluta cupiditate similique! Alias, exercitationem natus! Excepturi explicabo
+                            rem corrupti vel beatae. Nostrum cum fugit asperiores in magnam impedit minima accusamus, nisi
+                            cupiditate tempore omnis, quis neque iusto perspiciatis? Iusto ipsum ea, ex aliquid nobis dolor
+                            rem repellendus accusamus, corporis eum, ut vitae accusantium quod animi atque quidem. Nesciunt
+                            voluptatum voluptate aliquid suscipit dolor!</p>
+                        <a href="#">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+{% endblock %}
