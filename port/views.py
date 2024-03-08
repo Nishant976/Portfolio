@@ -19,4 +19,8 @@ def service(request):
 
 
 def skill(request):
-    return render(request,)
+    return render(request, "port/skill.html")
+
+
+def contact(request):
+    return render(request, "port/contact.html")

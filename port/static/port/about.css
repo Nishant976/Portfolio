@@ -19,12 +19,13 @@
     /*background: rgb(94, 91, 91);*/
     font-family: Arial, sans-serif;
     transition: all 0.3s ease;
+    background: rgb(100, 98, 98);
 }
 
 .navbar.sticky {
     padding: 10px 0;
     background: rgb(100, 98, 98);
-}
+} 
 
 
 .navbar .max-width {
@@ -35,7 +36,7 @@
 }
 
 .navbar .logo a {
-    color: #fff;
+    color:#fff;
     font-size: 35px;
     font-weight: 600;
     margin-left: 30px;
@@ -52,7 +53,7 @@
 }
 
 .navbar .menu li a {
-    color: #fff;
+    color:#fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;

@@ -12,7 +12,11 @@ urlpatterns = [
 
     path("about",views.about,name="about"),
 
-    path("service",views.service,name="service")
+    path("service",views.service,name="service"),
+
+    path("skill",views.skill,name="skill"),
+
+    path("contact",views.contact,name="contact")
 ]
 
 
