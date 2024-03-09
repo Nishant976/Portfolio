@@ -16,7 +16,9 @@ urlpatterns = [
 
     path("skill",views.skill,name="skill"),
 
-    path("contact",views.contact,name="contact")
+    path("contact",views.contact,name="contact"),
+
+    path("insert_data",views.insert_data,name="insert_data")
 ]
 
 

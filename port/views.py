@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import form
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -24,3 +26,18 @@ def skill(request):
 
 def contact(request):
     return render(request, "port/contact.html")
+
+def insert_data(request):
+    if request.method == "POST":
+        name=request.POST['name']
+        email=request.POST['email']
+        subject=request.POST['subject']
+        describe=request.POST['describe']
+        my= form(name=name,email=email,subject=subject,describe=describe)
+        my.save()
+        return render(request,"port/contact.html")
+    else:
+        return render(request,"port/contact.html")
+
+
+    
