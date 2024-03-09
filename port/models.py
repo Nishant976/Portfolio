@@ -11,8 +11,8 @@ class form(models.Model):
     def __str__(self):
         return self.name
     
-class downloadcv(models.Model):
-    file=models.FileField(upload_to='files')
+class resume(models.Model):
+    file=models.FileField(upload_to='media')
 
     def __str__(self):
         return self.file
