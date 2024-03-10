@@ -12,9 +12,6 @@ class form(models.Model):
         return self.name
     
 class resume(models.Model):
-    file=models.FileField(upload_to='media')
-
-    def __str__(self):
-        return self.file
+    file=models.FileField(upload_to='files') 
 
 
