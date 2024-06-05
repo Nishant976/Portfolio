@@ -503,7 +503,7 @@ section .title::after {
 /* footer */
 
 footer {
-    background: rgb(20, 16, 16);
+    background: rgb(15, 14, 14);
     padding: 20px 23px;
     color: #fff;
 }

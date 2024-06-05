@@ -237,3 +237,17 @@ section .title::after {
     background: none;
 }
 
+footer {
+    background: rgb(15, 14, 14);
+    padding: 20px 23px;
+    color: #fff;
+}
+
+footer span a {
+    color: brown;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
